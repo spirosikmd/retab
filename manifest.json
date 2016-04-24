@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "Retab",
+  "description": "Move tabs left and right with keyboard shortcuts",
+  "version": "1.0",
+
+  "commands": {
+    "move-tab-left": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Left",
+        "mac": "Command+Shift+Left"
+      },
+      "description": "Move current tab one position to the left"
+    },
+    "move-tab-right": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Right",
+        "mac": "Command+Shift+Right"
+      },
+      "description": "Move current tab one position to the right"
+    }
+  },
+
+  "browser_action": {
+    "default_icon": "retab.png",
+    "default_popup": "retab.html"
+  },
+  "permissions": [
+    "tabs"
+  ]
+}
