@@ -5,7 +5,12 @@ function move (where) {
     }
     var tab = tabs[0];
     var index = where === 'left' ? tab.index - 1 : tab.index + 1;
-    chrome.tabs.move(tab.id, {index: index});
+    chrome.tabs.query({}, function (tabs) {
+      if (index === tabs.length) {
+        index = 0;
+      }
+      chrome.tabs.move(tab.id, {index: index});
+    });
   });
 }
 

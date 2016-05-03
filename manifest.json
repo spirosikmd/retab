@@ -8,15 +8,15 @@
   "commands": {
     "move-tab-left": {
       "suggested_key": {
-        "default": "Ctrl+Shift+Left",
-        "mac": "Command+Shift+Left"
+        "default": "Ctrl+Shift+A",
+        "mac": "Command+Shift+A"
       },
       "description": "Move current tab one position to the left"
     },
     "move-tab-right": {
       "suggested_key": {
-        "default": "Ctrl+Shift+Right",
-        "mac": "Command+Shift+Right"
+        "default": "Ctrl+Shift+Z",
+        "mac": "Command+Shift+Z"
       },
       "description": "Move current tab one position to the right"
     }
